@@ -13,7 +13,6 @@ public class Main2Activity extends AppCompatActivity {
 
     private TextView nameA, nameB;
     private TextView scoreA, scoreB;
-    private TextView addA3, addA2, addA1, addB3, addB2, addB1;
     private Intent intent;
 
     @Override
@@ -28,14 +27,6 @@ public class Main2Activity extends AppCompatActivity {
 
         scoreA = (TextView) findViewById(R.id.team_a_score);
         scoreB = (TextView) findViewById(R.id.team_b_score);
-
-//        addA1 = (TextView) findViewById(R.id.team_a_add_1);
-//        addA2 = (TextView) findViewById(R.id.team_a_add_2);
-//        addA3 = (TextView) findViewById(R.id.team_a_add_3);
-//
-//        addB1 = (TextView) findViewById(R.id.team_b_add_1);
-//        addB2 = (TextView) findViewById(R.id.team_b_add_2);
-//        addB3 = (TextView) findViewById(R.id.team_b_add_3);
 
         nameA.setText(intent.getStringExtra("Team A"));
         nameB.setText(intent.getStringExtra("Team B"));
